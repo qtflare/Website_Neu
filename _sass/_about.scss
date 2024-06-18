@@ -1,0 +1,87 @@
+#about {
+	background-color:rgba(0,0,0,0.5);
+
+.hero-body {
+	display: flex;
+	margin: auto;
+	// padding-bottom: 0px;
+}
+
+h1 {
+text-align: left;
+}
+
+p {
+	text-align: left;
+	color: var(--clr_titlefont);
+}
+
+.abouts {
+	display: block;
+	max-width: 50%;
+	margin-bottom: auto;
+
+	.wrap {
+		max-width: 66.6666%;
+		margin: 0px auto 0px auto;
+	}
+}
+
+.contact {
+	display: block;
+	width: 40%;
+	margin-bottom: auto;
+
+	.wrap {
+		max-width: 66.6666%;
+		min-width: 400px;
+		margin: 0px auto 0px auto;
+	}
+}
+
+.wrap {
+	padding: 2.5rem;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #000;
+	z-index: 4;
+	opacity: 0.8;
+	object-fit: contain;
+	}
+
+input, textarea {
+	width: 100%; /* Full width */
+	font-family: inherit;
+	font-size: inherit;
+	resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: var(--roundcards);
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+  }
+
+.footer {
+	max-height: 20%;
+    width: 100%;
+	// background-color: #0a0a0a;
+	margin-bottom: 0;
+
+	.button {
+		margin: auto;
+	}
+
+    }
+
+.container {
+	padding-top: 0;
+	padding-bottom: 1rem;
+}
+
+}

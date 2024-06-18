@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* @import url('https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css'); */
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+:root {
+    /* Properties for easy & quick changes */
+    --titlefont: Poppins, system-ui;
+    --clr_mainfont: var(--clr_slate);
+    --clr_titlefont: #FFFFFF;
+    --clr_midgrey: #393D47; /* Anthracite */
+    --clr_slate: #26282A;
+    --clr_teal: #007C80;
+    --clr_mint: #429e9d;
+
+    --roundcards: 6px;
+    --slimboxpadding: 0.25rem;
+    --midboxpadding: 1.25rem;
+}
+
+html {
+    background-color: #000;
+    box-sizing: border-box;
+    
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+html,
+body {
+    scroll-behavior: smooth !important;
+    transition: all 0.25s ease;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+      max-width: 100%;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 3;
+
+}
+
+.gradient {
+background: rgb(255,255,255);
+background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1); 
+}
+
+.hero-body {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 3rem 1.5rem;
+    align-items: center;
+    overflow: hidden;
+}
+
+.columns {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    justify-content: center; /* Nötig? */
+}
+
+// @media screen and (min-width: 769px), print {
+//   .columns {
+//     display: flex;
+//   }
+// }
+
+.column {
+    position: relative;
+    display: block;
+    margin: auto 0.5rem;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.5rem;
+}
+
+.container {
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.box{
+    display: block;
+    max-height: 100%;
+    background-color: #fff;
+    border-radius: var(--roundcards);
+    box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02);
+    color: var(--clr_mainfont);
+    padding: var(--slimboxpadding);
+
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+a:not(.button) {
+    &:link {color: var(--clr_teal); text-decoration: none;}
+    &:hover {color: var(--clr_mint); text-decoration: underline;}
+    &:visited {color: #5a809b; text-decoration: none;}
+    &:visited:hover {color: var(--clr_midgrey); text-decoration: underline;}
+}
+
+figcaption {
+    margin: 0.25em;
+    max-width: 100%;
+    position: relative;
+    word-wrap:break-word;
+    text-align: center;
+
+    p, a {
+    margin: 0;
+    }
+
+    &:empty {
+        margin:0;
+    }
+
+}
+
+.button {
+    color: var(--clr_titlefont);
+    font-family: Poppins;
+    cursor: pointer;
+    a {
+        display:inline-block;
+        width:100%;
+        height:100%;
+        color: var(--clr_titlefont);
+        text-decoration: none;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+}
+
+.roundbutton {
+display: inline-block;
+position: relative;
+height: 2.5em;
+background-color: transparent;
+cursor: pointer;
+
+border: 1px solid var(--clr_titlefont);
+color: var(--clr_titlefont);
+border-radius: 100vmax;
+padding-left: calc(1em + .25em);
+padding-right: calc(1em + .25em);
+padding-bottom: calc(.5em - 1px);
+padding-top: calc(.5em - 1px);
+
+font-size: 1rem;
+text-decoration: none;
+text-transform: uppercase;
+white-space: nowrap;
+
+justify-content: center;
+justify-content: flex-start;
+align-items: center;
+vertical-align: top;
+-webkit-appearance: none;
+
+    &:hover {
+        background-color: var(--clr_titlefont);
+        border: 1px solid transparent;
+        color: #0a0a0a;
+    }
+}
+
+.plainbutton {
+    display: block;
+    transition: all 0.25s ease;
+    width: 10rem;
+    padding: 1.5rem;
+    margin: auto;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5vmax !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #363636 !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black !important;
+}
+
+
+
+/* @media screen and (min-width: 769px), print {
+    .columns:not(.is-desktop) {
+    display: flex;
+  }
+} */

@@ -1,0 +1,102 @@
+<section class="hero"  id="visual">
+  <div class="hero-body">
+
+    <div class="columns">
+        {% for post in site.data.visualcontent %}
+        <figure class="box">
+            <div class="imgcontainer">
+              <picture class="modaltrigger" id="{{post.name}}_fullimage" data-target="{{post.name}}" alt="Small preview of the {{post.name}} image">
+                <source srcset="{{post.thump}}.webp" type="image/webp">
+                <source srcset="{{post.thump}}.jpg" type="image/jpeg">
+                <img src="{{post.thump}}.jpg">
+            </picture>
+              </picture>
+            <img >
+            </div>
+            <figcaption>
+              {% if post.description %}
+              <p>{{ post.description }}</p>
+              {% endif %}
+              {% if post.link %}
+              <a class="imgref" href="{{post.link}}" target="_blank" rel="noreferrer noopener">{{ post.link | truncate: 80 }}</a>
+              {% endif %}
+          </figcaption>
+        </figure>
+        {% endfor %}
+      </div>
+
+  </div>
+</section>
+
+<!-- <section class="hero"  id="visual">
+  <div class="hero-body">
+
+    <div class="columns">
+
+      <div class='column'>
+        {% for post in site.data.visualcontent %}
+        {% if forloop.index < 3 %}
+        <figure class="box">
+            <div class="imgcontainer">
+            <img class="modaltrigger" id="{{post.name}}_fullimage" data-target="{{post.name}}" src="{{post.image}}" alt="Full-size Image">
+            </div>
+            <figcaption>
+              {% if post.description %}
+              <p>{{ post.description }}</p>
+              {% endif %}
+              {% if post.link %}
+              <a class="imgref" href="{{post.link}}" target="_blank" rel="noreferrer noopener">{{ post.link | truncate: 80 }}</a>
+              {% endif %}
+          </figcaption>
+        </figure>
+        {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class='column'>
+        {% for post in site.data.visualcontent %}
+        {% if forloop.index > 2%}
+        {% if forloop.index < 5%}
+        <figure class="box">
+          <div class="imgcontainer">
+            <img class="modaltrigger" id="{{post.name}}_fullimage" data-target="{{post.name}}" src="{{post.image}}" alt="Full-size Image">
+          </div>
+          <figcaption>
+            {% if post.description %}
+            <p>{{ post.description }}</p>
+            {% endif %}
+            {% if post.link %}
+            <a class="imgref" href="{{post.link}}" target="_blank" rel="noreferrer noopener">{{ post.link | truncate: 80 }}</a>
+            {% endif %}
+          </figcaption>
+        </figure>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </div>
+
+  <!-- Column 3
+      <div class='column'>
+        {% for post in site.data.visualcontent %}
+        {% if forloop.index > 4 %}
+        <figure class="box">
+          <div class="imgcontainer">
+            <img class="modaltrigger" id="{{post.name}}_fullimage" data-target="{{post.name}}" src="{{post.image}}" alt="Full-size Image">
+          </div>
+          <figcaption>
+            {% if post.description %}
+            <p>{{ post.description }}</p>
+            {% endif %}
+            {% if post.link %}
+            <a class="imgref" href="{{post.link}}" target="_blank" rel="noreferrer noopener">{{ post.link | truncate: 80 }}</a>
+            {% endif %}
+          </figcaption>
+        </figure>
+        {% endif %}
+        {% endfor %}
+      </div>
+
+    </div>
+
+  </div>
+</section> -->

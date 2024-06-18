@@ -1,0 +1,136 @@
+#visual {
+    background-color: var(--clr_midgrey) !important;
+
+.columns {
+    display: block;
+    column-count: 3;
+    column-width: 300px;
+    margin: 0px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:is(:first-child) {
+        margin-top: 0px;
+    }
+
+    & > * {
+        transform: none;
+    }
+}
+
+.imgcontainer {
+display: flex;
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+height: auto;
+border-radius: calc(var(--roundcards)/2);
+overflow: hidden;
+}
+
+picture {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: transform 500ms ease-in-out;
+
+    &:hover {
+            transform: scale(1.05);
+            transition: transform 150ms ease-out;
+
+        }
+}
+
+
+figcaption {
+    margin: 0.25em;
+    max-width: 100%;
+    position: relative;
+    word-wrap:break-word;
+    text-align: center;
+
+    p, a {
+    margin: 0;
+    }
+
+    &:empty {
+        margin:0;
+    }
+
+}
+
+}
+
+#modals {
+ display: block;
+
+   .modal {
+     display: none;
+    overflow: hidden;
+     position: fixed; 
+    z-index: 40;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   }
+
+
+.modal-background {
+background-color: rgba(10,10,10,.86);
+bottom: 0;
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+}
+
+img {
+    width: auto;            /* Ensures the image doesn't exceed the container's width */
+    max-height: 90vh;       /* Maintains the image's aspect ratio */
+    border-radius: 6px;
+}
+
+.box {
+    padding: 0.25rem;
+    position: relative;
+    display: flex;
+}
+
+.formal {
+    display: block;
+    text-align: left;
+    padding: 1.25rem;
+    font-size: 1em;
+    margin:auto;
+    max-width: 800px;
+
+    h1 {
+        color: black;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 0.75rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+}

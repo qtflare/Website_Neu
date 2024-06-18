@@ -1,0 +1,42 @@
+<section class="hero" id="landing">
+  <div class="hero-body">
+
+        <div id="herobanner" class="fullscreen herobanner">
+        <div class="fullscreen whiteback"></div>
+        <div class="fullscreen gradient"></div>
+        <picture class="heroimg">
+          <source srcset="{{site.baseurl}}/assets/images/hero.webp" type="image/webp">
+          <source srcset="{{site.baseurl}}/assets/images/hero.jpg" type="image/jpeg">
+          <img src="{{site.baseurl}}/assets/images/hero.jpg">
+        </picture>
+        </div>
+
+    <div class="titlecontainer">
+      <div class="tbox">
+        <h1 id="title">
+          {{site.title}}
+        </h1>
+      </div>
+      <div class="tbox">
+        <h3 id="subtitle">
+          {{site.subtitle}}
+        </h3>
+      </div>
+      <hr id="titlehr">
+      <script>document.getElementById('titlehr').style.width = '100%';</script>
+
+      <div class="tbox">
+        <a class="button roundbutton navbutton outernavbutton" href="{{site.url}}{{site.baseurl}}/#visual">
+          Visual
+        </a>
+        <a class="button roundbutton navbutton" href="{{site.url}}{{site.baseurl}}/#audible">
+          Audible
+        </a>
+        <a class="button roundbutton navbutton outernavbutton" href="{{site.url}}{{site.baseurl}}/#about">
+          About
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>

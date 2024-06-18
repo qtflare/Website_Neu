@@ -1,0 +1,123 @@
+#audible {
+        background-color: var(--clr_slate) !important;
+
+	hr {
+		color: var(--clr_mainfont);
+		width: 80%;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.externallink {
+		font-size: large;
+		font-weight: bold;
+	}
+
+	p {
+		margin: 0px;
+	}
+	.columns {
+		display: block;
+		flex-wrap: nowrap;
+		height: 100%;
+		width:100%;
+	}
+
+	.column {
+		height: 100%;
+	}
+
+.yt_column {
+	max-height: 90%;
+}
+
+
+	// .bc_column {
+	// 	flex-basis: 0;
+	// 	flex-grow: 1;
+	// 	flex-shrink: 1;
+	// }
+	.box {
+		height: auto;
+		width: fit-content;
+		margin: auto;
+		padding: var(--midboxpadding);
+	}
+
+	.bc_box {
+		width:min-content;
+	}
+
+	@media screen and (min-width: 1100px), print {
+		.columns {
+		display: flex;
+		}
+
+		.yt_column {
+			flex: none;
+			width: 66.6666%;
+		}
+	}
+
+/* YT Container */
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 3px;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+    }
+
+    .video-container::after {
+        display: block;
+        content: "";
+        padding-top: 56.25%;
+    }
+
+/* Bandcamp Container */
+
+.bandcamp-container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.bc_iframe {
+	flex-grow: 1;
+	border: none;
+	margin: 0;
+	padding: 0; 
+}
+    // .bandcamp-container {
+    //     position: relative;
+    //     overflow: hidden;
+    //     width: 100%;
+    //     border-radius: 3px;
+
+    // }
+
+    // .bandcamp-container iframe {
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	top: 0;
+	// 	left: 0;
+      
+    // }
+    // .bandcamp-container::after {
+	// 	position: relative;
+    //     display: block;
+    //     content: "";
+    //     padding-top: 134.2857%;
+    // }
+
+}

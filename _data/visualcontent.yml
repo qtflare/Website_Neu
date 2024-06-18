@@ -1,0 +1,36 @@
+# Add webms to improve loading speed & compatibility
+
+- name: Beterror
+  thump: /assets/images/beterror_thump
+  image: /assets/images/beterror_full.png
+  description: Cover for <a href="https://crach.bandcamp.com/album/remnants-of-the-past">Beterror - Remnants Of The Past EP</a>
+
+- name: Ultrafiesta
+  thump: /assets/images/ultrafiesta_thump
+  image: /assets/images/ultrafiesta_full.png
+  description:
+  link:
+
+- name: Birds
+  thump: /assets/images/birds_thump
+  image: /assets/images/birds_full.png
+  description: Illustration for <a href="https://www.vr-elibrary.de/toc/inde/9/4">INDES 4/2020&#58; Ökologismus</a>
+  link: 
+
+- name: Epnw
+  thump: /assets/images/epnw_thump
+  image: /assets/images/epnw_thump.jpg
+  description:
+  link:
+    
+- name: GlobaLE
+  thump: /assets/images/globale_thump
+  image: /assets/images/globale_full.png
+  description: Bill for the Leipzig film festival <a href="https://www.globale-leipzig.de">GlobaLE</a>
+  link: 
+    
+- name: Satellites
+  thump: /assets/images/satellites_thump
+  image: /assets/images/satellites_full.png
+  description: One more Illustration for <a href="https://www.vr-elibrary.de/toc/inde/9/4">INDES 4/2020&#58; Ökologismus</a>
+  link: 

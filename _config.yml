@@ -1,0 +1,58 @@
+# _____Parameters affecting content of the site
+# Title of the Site
+title: Karl Rollwagen
+# Subtitle
+subtitle: Graphics & audio engineering
+
+# URL of the heroimage
+heroimage: /assets/images/hero.jpg
+# URL of the favicon
+# site.favicon-url: 
+
+# About section
+about_hi: Hey!
+about_text: This is a little showreel of my works. Loooorem iiiipsum wir lieben dich schaaaalalalalal
+email:
+
+
+# _____Parameters affecting meta section / SEO stuff
+
+# Keywords of the Site
+site-keywords: graphics, illustrations, art, audio engineering, recording, media, leipzig
+# Description of the Site
+description: Graphic & audio engineering services such as illustrations, artworks, recordings, mixes or sounddesigns tailored to your wishes.
+
+
+
+# _____Parameters affecting stuff in the background
+
+# Markdown processor
+markdown: kramdown
+# URL of the Site
+url: 
+# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
+baseurl: ''
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+# Compress
+compress_html:
+  clippings: all
+# Build settings
+    # plugins:
+    #   - jekyll-admin
+    #   - jekyll-feed
+
+# Exclude
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
