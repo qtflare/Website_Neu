@@ -1,60 +1,68 @@
 #about {
-	background-color:rgba(0,0,0,0.5);
 
 .hero-body {
 	display: flex;
 	margin: auto;
+
 	// padding-bottom: 0px;
 }
 
-h1 {
-text-align: left;
+.aboutsection {
+	display: flex;
+	columns: 700px 2; //find fitting max width parameter
+	width: 100%;
+	align-items: center;
+
+	.about	{
+		/* Small only */
+		@media screen and (max-width: 699px) {
+			width: 90%;
+		}
+		@media screen and (min-width: 700px) {
+			width: 60%;
+		}
+		margin: 0px 0px auto 0px;
+
+		.wrap {
+			@media screen and (max-width: 699px) {
+				width: 100%;
+			}
+			@media screen and (min-width: 700px) {
+				width: 50%;
+			}
+			margin: auto;
+			margin-top: 0px;
+		}
+	}
+
+	.contact {
+		@media screen and (max-width: 699px) {
+			width: 90%;
+		}
+		@media screen and (min-width: 700px) {
+			width: 40%;
+		}
+		.wrap {
+		@media screen and (max-width: 699px) {
+			width: 100%;
+		}
+		@media screen and (min-width: 700px) {
+			width: 20rem;
+		}
+
+		}
+	}
 }
 
+h1 {
+	text-align: left;
+	}
+	
 p {
 	text-align: left;
 	color: var(--clr_titlefont);
 }
-
-.abouts {
-	display: block;
-	max-width: 50%;
-	margin-bottom: auto;
-
-	.wrap {
-		max-width: 66.6666%;
-		margin: 0px auto 0px auto;
-	}
-}
-
-.contact {
-	display: block;
-	width: 40%;
-	margin-bottom: auto;
-
-	.wrap {
-		max-width: 66.6666%;
-		min-width: 400px;
-		margin: 0px auto 0px auto;
-	}
-}
-
-.wrap {
-	padding: 2.5rem;
-}
-
-.background {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-color: #000;
-	z-index: 4;
-	opacity: 0.8;
-	object-fit: contain;
-	}
-
+	
 input, textarea {
 	width: 100%; /* Full width */
 	font-family: inherit;
@@ -70,11 +78,20 @@ input, textarea {
 .footer {
 	max-height: 20%;
     width: 100%;
-	// background-color: #0a0a0a;
+	background-color: rgba(0,0,0,0.75);
 	margin-bottom: 0;
 
 	.button {
 		margin: auto;
+	}
+
+	a:not(.button) {
+		color: var(--clr_midgrey);
+		cursor: pointer;
+	}
+
+	a:not(.button):hover {
+		color: var(--clr_mint);
 	}
 
     }

@@ -220,6 +220,12 @@ vertical-align: top;
     background: black !important;
 }
 
+#copyright, #disclaimer {
+    .modal-image {
+    max-width: 90%;
+    }
+}
+
 
 
 /* @media screen and (min-width: 769px), print {

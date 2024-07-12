@@ -23,6 +23,11 @@
         margin-top: 0px;
     }
 
+    &:not(:last-child){
+        margin-bottom: auto;
+    }
+
+
     & > * {
         transform: none;
     }
